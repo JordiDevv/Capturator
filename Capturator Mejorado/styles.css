@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    color:#DC0000;
+    font-family: 'Press Start 2P', cursive;
+    background: url("./assests/Fondo.png");
+    background-size: 100%;
+    background-position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#sectionBienvenido {
+    display: flex;
+    justify-content: center;
+}
+
+.bienvenido {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 242, 230, .8);
+    width: 890px;
+    height: 140px;
+    border-radius: 20px;
+}
+
+h1 {
+    width: 576px;
+    height: 30px;
+}
+
+#sectionInicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio {
+    border-radius: 20px;
+    margin: 50px 250px 0px 250px;
+    background-color: rgb(255, 242, 230, .8);
+    width: 1080px;
+    height: 120px;
+}
+
+.párrafo {
+    margin: 25px;
+}
+
+.botonFlechaDerecha img {
+    width: 115px;
+    height: 110px;
+    opacity: .9;
+    position: relative;
+    top: 40px;
+}
+
+.botonFlechaDerecha img:hover {
+    width: 150px;
+}
+
+#botonSiguiente {
+    display: none;
+}
+
+#sectionPorCierto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.porCierto {
+    border-radius: 20px;
+    margin: 50px 250px 0px 250px;
+    background-color: rgb(255, 242, 230, .8);
+    width: 1080px;
+    height: 120px;
+}
+
+.botonEntendido img {
+    width: 95px;
+    height: 110px;
+    opacity: .9;
+    position: relative;
+    top: 40px;
+}
+
+.botonEntendido img:hover {
+    width: 105px;
+    height: 115px;
+    rotate: 10deg;
+}
+
+#botonEntendido {
+    display: none;
+}
+
+
+#sectionConociendoAOka {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorDiálogoOka {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.cuadroDiálogo {
+    width: 1000px;
+    height: 160px;
+}
+
+.diálogoOka {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 20px;
+}
+
+.primeraImgOka {
+    position: relative;
+    right: 325px;
+    top: 25px;
+    height: 530px;
+}
+
+.meLlamo {
+    display: flex;
+    border-radius: 20px;
+    margin: 50px 250px 0px 250px;
+    background-color: rgb(255, 242, 230, .8);
+    width: 360px;
+    height: 120px;
+    position: relative;
+    bottom: 545px;
+    left: 250px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botonNombre {
+    margin: 20px;
+}
+
+#sectionEncantado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encantado {
+    border-radius: 20px;
+    margin: 50px 250px 0px 250px;
+    background-color: rgb(255, 242, 230, .8);
+    width: 695px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botonIgualmente {
+    margin: 20px;
+}
+
+#sectionElección {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elección {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: -95px;
+    border-radius: 20px;
+    background-color: rgb(255, 242, 230, .8);
+    width: 650px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.opciones {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inputPokemon {
+    display: none;
+}
+
+.inputPokemon:hover + label {
+    height: 290px;
+}
+
+.inputPokemon:checked + label {
+    height: 290px;
+}
+
+
+.tarjetaPokemon {
+    background-color: #fff2e6;
+    display: flex;
+    width: 190px;
+    height: 280px;
+    border-radius: 20px;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.tarjetaPokemon img {
+    width: 190px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+
+.nombrePokemon {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.elección2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonLoTengo img {
+    width: 95px;
+    height: 110px;
+    opacity: .9;
+    position: relative;
+    top: 20px;
+}
+
+.botonLoTengo img:hover {
+    width: 100px;
+    height: 115px;
+}
+
+#botonLoTengo {
+    display: none;
+}
+
+#sectionCaptura {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.captura {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: rgb(255, 242, 230, .8);
+    width: 690px;
+    height: 125px;
+}
+
+#sectionCapturaArceus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.capturaArceus {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 242, 230, .8);
+    width: 1100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botonFlashback {
+    margin: 20px;
+}
+
+#sectionRetirarLicencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorCuadroDiálogoKetchup {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.contenedorDiálogoKetchup {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+}
+
+.cuadroDiálogoExclamación {
+    width: 1100px;
+    height: 300px;
+}
+
+.diálogoKetchup {
+    position: absolute;
+    top: -245px;
+    left: -35px;
+    margin: 20px;
+}
+
+.diálogoKetchup2 {
+    position: absolute;
+    top: -145px;
+    left: 85px;
+    margin: 20px;
+}
+
+.retirarLicenciaOka {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 242, 230, .8);
+    width: 1100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sectionTeamRocket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teamRocket1 {
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgb(255, 242, 230, .8);
+}
+
+.teamRocket2 {
+    margin: 30px;
+    border-radius: 20px;
+    background-color: rgb(255, 242, 230, .8);
+}
+
+.teamRocket3 {
+    margin: 30px;
+    border-radius: 20px;
+    background-color: rgb(255, 242, 230, .8);
+}
+
+#sectionReinicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonReinicio {
+    margin: 20px;
+    position: relative;
+    top: 250px;
+}

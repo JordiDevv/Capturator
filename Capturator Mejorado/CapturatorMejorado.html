@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>🏆 Capturator 🏆</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <section id="sectionBienvenido">
+            <div class="bienvenido">
+                <h1>BIENVENIDO ENTRENADOR !!</h1>
+                <h2>INSTRUCCIONES:</h2>
+            </div>
+        </section>
+
+        <section id="sectionInicio">
+            <div class="inicio">
+                <p class="párrafo">Debes conseguir 10 puntos para ganar. Cuanto más raro sea un pokemon mayor puntaje, pero mayor dificultad, y si fallas 3 veces te quitarán la licencia de entrenador por paquete... Son muy estrictos.</p>
+            </div>
+            <label class="botonFlechaDerecha" for="botonSiguiente">
+                <img src="./assests/FlechaDerecha.png" alt="Siguiente">
+            </label>
+            <button id="botonSiguiente">Siguiente</button>
+        </section>
+
+        <section id="sectionPorCierto">
+            <div class="porCierto">
+                <p class="párrafo">Por cierto! Deberás conseguirlo en 10 lanzamientos como mucho, o al Team Rocket le dará tiempo de llevarse a todos los pokemon, asi que no vayas todo el rato a por Caterpie jeje. HAZTE CON TODOS!</p>
+            </div>
+            <label class="botonEntendido" for="botonEntendido">
+                <img src="./assests/PulgarArriba.png" alt="Entendido">
+            </label>
+            <button id="botonEntendido">Entendido</button>
+        </section>
+        
+        <section id="sectionConociendoAOka">
+            <div class="contenedorDiálogoOka">
+                <img src="./assests/CuadroDiálogo.png" alt="" class="cuadroDiálogo">
+                <div class="diálogoOka">Profesor Oka: -"Pero dónde están mis modales?! Ni siquiera te he preguntado cómo te llamas!"</div>
+            </div>
+            <div class="primeraImgOka">
+                <img src="./assests/ProfesorOakOriginal.png" alt="">
+            </div>
+            <div class="meLlamo">
+                <p class="textoMeLlamo">Tú -"Me llamo..."</p>
+                <input id="inputNombre" maxlength="10">
+                <button id="botonNombre">Seleccionar</button>
+            </div>
+        </section>
+        
+        <section id="sectionEncantado">
+            <div class="encantado">
+                <p class="párrafo">Profesor Oka: -"Encantado <span id="spanNombreJugador"></span>!"</p>
+                <button id="botonIgualmente">Igualmente</button>
+            </div>
+        </section>
+
+        <section id="sectionElección">
+            <div class="elección">
+                <p>A quién quieres capturar?</p>
+                <p></p>
+                <p>Puedes elegir entre:</p>
+            </div>
+    
+            <div class="opciones">
+                <input type="radio" name="pokemon" id="inputMew" class="inputPokemon"> 
+                <label class="tarjetaPokemon" for="inputMew" id="tarjetaPokemon">
+                    <img src="./assests/Mew.jpg" alt="Mew" id="imgTarjetaPokemon">
+                    <p class="nombrePokemon">-Mew</p>
+                </label>
+
+                <input type="radio" name="pokemon" id="inputMewtwo" class="inputPokemon">
+                <label class="tarjetaPokemon" for="inputMewtwo" id="tarjetaPokemon">
+                    <img src="./assests/Mewtwo.png" alt="Mewtwo" id="imgTarjetaPokemon">
+                    <p class="nombrePokemon">-Mewtwo</p>
+                </label>
+
+                <input type="radio" name="pokemon" id="inputMoltres" class="inputPokemon">
+                <label class="tarjetaPokemon" for="inputMoltres" id="tarjetaPokemon">
+                    <img src="./assests/Moltres.jpg" alt="Moltres" id="imgTarjetaPokemon">
+                    <p class="nombrePokemon">-Moltres</p>
+                </label>
+
+                <input type="radio" name="pokemon" id="inputDragonite" class="inputPokemon">
+                <label class="tarjetaPokemon" for="inputDragonite" id="tarjetaPokemon">
+                    <img src="./assests/Dragonite.jpg" alt="Dragonite" id="imgTarjetaPokemon">
+                    <p class="nombrePokemon">-Dragonite</p>
+                </label>
+                
+                <input type="radio" name="pokemon" id="inputCharizard" class="inputPokemon">
+                <label class="tarjetaPokemon" for="inputCharizard" id="tarjetaPokemon">
+                    <img src="./assests/Charizard.jpeg" alt="Charizard" id="imgTarjetaPokemon">
+                    <p class="nombrePokemon">-Charizard</p>
+                </label>
+
+                <input type="radio" name="pokemon" id="inputGolem" class="inputPokemon">
+                <label class="tarjetaPokemon" for="inputGolem" id="tarjetaPokemon">
+                    <img src="./assests/Golem.png" alt="Golem" id="imgTarjetaPokemon">
+                    <p class="nombrePokemon">-Golem</p>
+                </label>
+
+                <input type="radio" name="pokemon" id="inputTauros" class="inputPokemon">
+                <label class="tarjetaPokemon" for="inputTauros" id="tarjetaPokemon">
+                    <img src="./assests/Tauros.jpg" alt="Tauros" id="imgTarjetaPokemon">
+                    <p class="nombrePokemon">-Tauros</p>
+                </label>
+
+                <input type="radio" name="pokemon" id="inputStarmie" class="inputPokemon">
+                <label class="tarjetaPokemon" for="inputStarmie" id="tarjetaPokemon">
+                    <img src="./assests/Starmie.jpg" alt="Starmie" id="imgTarjetaPokemon">
+                    <p class="nombrePokemon">-Starmie</p>
+                </label>
+
+                <input type="radio" name="pokemon" id="inputÓnix" class="inputPokemon">
+                <label class="tarjetaPokemon" for="inputÓnix" id="tarjetaPokemon">
+                    <img src="./assests/Ónix.jpg" alt="Ónix" id="imgTarjetaPokemon">
+                    <p class="nombrePokemon">-Ónix</p>
+                </label>
+
+                <input type="radio" name="pokemon" id="inputCaterpie" class="inputPokemon">
+                <label class="tarjetaPokemon" for="inputCaterpie" id="tarjetaPokemon">
+                    <img src="./assests/Caterpie.png" alt="Caterpie" id="imgTarjetaPokemon">
+                    <p class="nombrePokemon">-Caterpie</p>
+                </label>
+            </div>
+           
+            <div class="elección2">
+                <label class="botonLoTengo" for="botonLoTengo" id="imgBotonLoTengo">
+                    <img src="./assests/Pokeball.png" alt="Lo Tengo">
+                </label>
+                <button id="botonLoTengo">Lo Tengo</button>
+            </div>
+        </section>
+
+        <section id="sectionCaptura">
+            <div class="captura">
+                <p>*<span id="spanNombreJugadorCaptura"></span> ha lanzado una pokeball*</p>
+                <p><span id="spanTextoCaptura"></span></p>
+                <button id="botonAceptar">Aceptar</button>
+            </div>
+        </section>
+
+        <section id="sectionCapturaArceus">
+            <div class="capturaArceus">
+                <p>Profesor Oka: -"Increíble... Eres un prodigio de la captura."</p>
+                <p>"Tal vez tú serías capaz de capturar al legendario Arceus."</p>
+                <p></p>
+                <button id="botonFlashback">*Flashback a la versión 0.1 de Capturator*</button>
+            </div>
+        </section>
+
+        <section id="sectionRetirarLicencia">
+            <div class="contenedorCuadroDiálogoKetchup">
+                <img src="./assests/CuadroDiálogoExclamación.png" alt="" class="cuadroDiálogoExclamación">
+            </div>
+            <div class="contenedorDiálogoKetchup">
+                <p class="diálogoKetchup">Ceniza de Ketchup -"Como líder todopoderoso de la asociación de entrenadores del mundo pokemon, estoy en mi deber de quitarte la licencia."</p>
+                <p class="diálogoKetchup2">"Eres la vergüenza del gremio."</p>
+            </div>
+                <p>...</p>
+            <div class="retirarLicenciaOka">
+                <p class="párrafo">Profesor Oka -"No le hagas mucho caso. Está resentido porque lleva 28 años intentando ganar una liga y no lo consigue."</p>
+                <p class="párrafo">"Aunque quizás deberías volver a intentarlo. Estoy seguro de que puedes hacerlo mejor."</p>
+            </div>
+            </div>
+        </section>
+
+        <section id="sectionTeamRocket">
+            <div class="teamRocket1">
+                <p class="párrafo">*música estridente sonando de fondo*</p>
+            </div>
+            <div class="teamRocket2">
+                <p class="párrafo">Voz de fondo -"Para proteger al mundo de la devastación..." En fin, etc etc.</p>
+            </div>
+            <div class="teamRocket3">
+                <p class="párrafo">Ha llegado el Team Rocket y se ha llevado a todos los pokemon... Te lo avisé</p>
+            </div>
+        </section>
+
+        <section id="sectionReinicio">
+            <div class="reinicio">
+                <button id="botonReinicio">Volver a intentar</button>
+            </div>
+        </section>
+        <script src="js/codigoCapturatorMejorado.js"></script>
+    </body>
+</html>
